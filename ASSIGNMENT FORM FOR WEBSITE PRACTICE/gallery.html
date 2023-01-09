@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Smashing Pumpkins</title>
+      <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="logo">
+      <img src="images/logo.png" alt="spLogo">
+      </div>
+      <ul class="nav-area">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Beginnings</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="signUp.html">Sign Up</a></li>
+      </<ul>
+  </div>
+
+  <div class="gallery-text">
+    <h1>Gallery</h1>
+    </div>
+
+    <div class="row">
+  <div class="column">
+    <img src="images/billy.jpg" alt="Billy" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/james.jpg" alt="James" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/darcy.jpg" alt="Darcy" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/jimmy.jpg" alt="Jimmy" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+  </body>
+</html>
